@@ -10,6 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
@@ -28,6 +29,16 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+    <snapshotRepository>
+      <id>nexus</id>
+      <url>http://3.108.193.252:8081/repository/prasanth-snapshot/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus</id>
+      <url>http://3.108.193.252:8081/repository/prasanth-release/</url>
+    </repository>
+  </distributionManagement>
 
 	<build>
 		<plugins>
